@@ -1,0 +1,19 @@
+package practice3;
+
+import java.util.Scanner;
+
+public class DigitSum \\ create a class name of DigitSum 
+{
+    public static void main(String[] args)  // main method implementation
+    {
+        Scanner sc = new Scanner(System.in); // create scanner object to input from user
+        int n  = sc.nextInt(); // a number input from user
+        int x = 0; // intialize a variable
+
+        while(n !=0){
+             x = x + n%10; // find the total of all digit 
+            n = n/10; 
+        }
+        System.out.println("sum of digit: "+x) ; // print the sum of all digit 
+    }
+}
